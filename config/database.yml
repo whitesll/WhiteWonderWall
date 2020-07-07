@@ -9,17 +9,17 @@
 # And be sure to use new-style password hashing:
 #   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
 #
-default: &default
+default: &default #エイリアスを設定している
   adapter: mysql2
-  encoding: utf8
+  encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
-  socket: /tmp/mysql.sock
+  password: password #編集
+  host: db #編集
 
 development:
-  <<: *default
-  database: WhiteWonderWall_development
+  <<: *default #defaultブロックを挿入している
+  database: WhiteWonderWall_development # DBの名前
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,11 @@ test:
 #
 production:
   <<: *default
-  database: WhiteWonderWall_production
-  username: WhiteWonderWall
-  password: <%= ENV['WHITEWONDERWALL_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DB_DATABASE'] %>
+  adapter: mysql2
+  encoding: utf8mb4
+  charset: utf8mb4
+  collation: utf8mb4_general_ci
+  host: <%= ENV['DB_HOST'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>

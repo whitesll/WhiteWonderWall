@@ -1,0 +1,14 @@
+          ok  Starting rsync for sync sync-volume
+rsync: link_stat "/Users/nishiokadaiki/projects/WhiteWonderWall/sync/." failed: No such file or directory (2)
+rsync error: some files could not be transferred (code 23) at /BuildRoot/Library/Caches/com.apple.xbs/Sources/rsync/rsync-54/rsync/main.c(996) [sender=2.6.9]
+       error  Error starting sync, exit code 23
+     message  
+     success  Rsync server started
+rsync: link_stat "/Users/nishiokadaiki/projects/WhiteWonderWall/sync/." failed: No such file or directory (2)
+rsync error: some files could not be transferred (code 23) at /BuildRoot/Library/Caches/com.apple.xbs/Sources/rsync/rsync-54/rsync/main.c(996) [sender=2.6.9]
+       error  Error starting sync, exit code 23
+     message  
+     success  Starting to watch /Users/nishiokadaiki/projects/WhiteWonderWall/sync/ - Press CTRL-C to stop
+    shutdown  Shutting down...
+          ok  Stopping sync container sync-volume
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
