@@ -10,7 +10,7 @@ jobs:
         environment:
           MYSQL_USERNAME: root
           MYSQL_PASSWORD: password
-          MYSQL_PORT: 4306
+          MYSQL_PORT: 3306
     working_directory: ~/repo
     steps:
       - checkout
@@ -41,7 +41,7 @@ jobs:
         environment:
           MYSQL_USERNAME: root
           MYSQL_PASSWORD: password
-          MYSQL_PORT: 4306
+          MYSQL_PORT: 3306
     working_directory: ~/repo
     steps:
       - checkout
