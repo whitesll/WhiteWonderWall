@@ -9,6 +9,7 @@ services:
       - '3000:3000'
     volumes:
       - .:/app
+      - gem_data:/usr/local/bundle
       - /var/tmp
       # socketファイルの共有
       - sockets:/app/tmp/sockets
@@ -44,3 +45,4 @@ services:
 volumes:
   db_data:
   sockets:
+  gem_data:
