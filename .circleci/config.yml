@@ -93,12 +93,12 @@ workflows:
             branches:
               only: master
       - aws-ecs/deploy-service-update:
-        requires:
-          - aws-ecr/build-and-push-image
-        family: 'ECS' # ECSのタスク定義名
-        cluster-name: '${ECS_ARN}'  #ECSのクラスターのARN
-        service-name: '1'  #サービス名
-        container-image-name-updates: "container=nginx,tag=${CIRCLE_SHA1}"
+          requires:
+            - aws-ecr/build-and-push-image
+          family: 'ECS' # ECSのタスク定義名
+          cluster-name: '${ECS_ARN}'  #ECSのクラスターのARN
+          service-name: '1'  #サービス名
+          container-image-name-updates: "container=nginx,tag=${CIRCLE_SHA1}"
       - aws-ecr/build-and-push-image:
           account-url: AWS_ECR_ACCOUNT_URL
           region: AWS_REGION
