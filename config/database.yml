@@ -20,18 +20,17 @@ default: &default #エイリアスを設定している
 development:
   <<: *default #defaultブロックを挿入している
   database: WhiteWonderWall_development # DBの名前
-  username: 'root'
-  password: 'rootpass'
-  port: 3306
-  host: '127.0.0.1'
-  database: ci_test
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: WhiteWonderWall_test
+  username: 'root'
+  password: 'rootpass'
+  port: 3306
+  host: '127.0.0.1'
+  database: ci_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
