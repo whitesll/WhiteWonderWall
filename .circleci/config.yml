@@ -122,4 +122,4 @@ workflows:
           family: 'ECS' # ECSのタスク定義名
           cluster-name: '${ECS_ARN}' #ECSのクラスターのARN
           service-name: '1' #サービス名
-          container-image-name-updates: "container=rails,tag=${CIRCLE_SHA1}"
+          container-image-name-updates: "container=rails-api,tag=${CIRCLE_SHA1}"
