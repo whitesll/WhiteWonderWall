@@ -14,7 +14,7 @@ default: &default #エイリアスを設定している
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: password #編集
+  password: 
   host: db #編集
 
 development:
