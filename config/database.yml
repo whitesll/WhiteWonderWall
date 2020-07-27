@@ -15,7 +15,7 @@ default: &default #エイリアスを設定している
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: 
-  host: localhost #編集
+  host: db #編集
 
 development:
   <<: *default #defaultブロックを挿入している
