@@ -2,7 +2,7 @@
   = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
     = render "devise/shared/error_messages", resource: resource
     .field
-      = f.label :email
+      = f.label :メールアドレス
       = f.email_field :email, autofocus: true, autocomplete: "email" ,placeholder: "メールアドレス"
     .field
       = f.label :パスワード
@@ -17,6 +17,6 @@
       = f.password_field :password_confirmation, autocomplete: "new-password" ,placeholder: "パスワード確認"
     .field      
       = f.label :ユーザー名
-      = f.text_field :nickname, autofocus: true,placeholder: "ユーザー名"
+      = f.text_field :nickname,placeholder: "ユーザー名"
     .actions
       = f.submit "新規登録"
