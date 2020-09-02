@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root "videos#index"
   resources :videos, only: [:show] do
     get :about, on: :collection
+    resources :videocomments, only: :create
   end
   resources :posts, only: [:index, :create, :new, :show] do
     get :createpage, on: :collection
@@ -21,4 +22,6 @@ Rails.application.routes.draw do
   end
   post   '/like/:comment_id', to: 'likes#like',   as: 'like'
   delete '/like/:comment_id', to: 'likes#unlike', as: 'unlike'
+  post   '/videolike/:videocomment_id', to: 'videolikes#like',   as: 'videolike'
+  delete '/videolike/:videocomment_id', to: 'videolikes#unlike', as: 'videounlike'
 end
