@@ -82,3 +82,4 @@ gem "font-awesome-sass"
 gem 'carrierwave'
 gem 'mini_magick'
 gem "jquery-rails"
+gem 'google-api-client', '~> 0.11', require: 'google/apis/youtube_v3'
