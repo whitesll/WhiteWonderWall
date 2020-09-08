@@ -12,5 +12,5 @@
             .video-content__bottom__right__title
               = link_to video.title, video_path(video.id)
             .video-content__bottom__right__views-date
-              | 再生数#{video.views}回・#{video.created_at}
+              | #{video.created_at}
   = paginate(@videos)
