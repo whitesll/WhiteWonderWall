@@ -7,7 +7,7 @@ User.create(
     { nickname: "初心者艦長", email: "000005@hotmail.com", password: "000005"},
     { nickname: "白兵狩り", email: "000006@hotmail.com", password: "000006"},
     { nickname: "星君は50点", email: "000007@hotmail.com", password: "000007"},
-    { nickname: "スペイン神", email: "000008@hotmail.com", password: "000008"},
+    { nickname: "レート奴隷", email: "000008@hotmail.com", password: "000008"},
     { nickname: "永遠亭の兎", email: "000009@hotmail.com", password: "000009"},
     { nickname: "なんとかさん", email: "000010@hotmail.com", password: "000010"},
     { nickname: "特攻兵", email: "000011@hotmail.com", password: "000011"},
@@ -40,8 +40,9 @@ Post.create(
     { title: "ユニークユニットは誰が強いか？", game_id: "4"},
     { title: "どのティアが一番稼げるか", game_id: "2"},
     { title: "芸術戦車画像", game_id: "3"},
-
     { title: "最強勢力はどこだ！？", game_id: "1"},
+    { title: "アリスで守矢に勝つ方法", game_id: "4"},
+    
     { title: "スペインvsインドネシアは様式美", game_id: "1"},
     { title: "ケシク最強説", game_id: "1"},
     { title: "初心者掲示板", game_id: "1"},
@@ -57,9 +58,7 @@ Post.create(
     { title: "フランス戦車について", game_id: "3"},
     { title: "いいことがあった", game_id: "3"},
     { title: "軽戦車雑談", game_id: "3"},
-    { title: "アリスで守矢に勝つ方法", game_id: "4"},
     { title: "白兵狩り", game_id: "4"},
-    { title: "アリスで兵操作を上手くなろう", game_id: "4"},
     { title: "勢力の特徴", game_id: "4"},
     { title: "面白い画像", game_id: "4"},
     { title: "勢力評価", game_id: "5"},
@@ -274,6 +273,53 @@ Comment.create(
       likes_count: "7",
       image: open("./app/assets/images/wot5.jpg"),
       created_at: "2020-09-15 17:12:42"
+    },
+    { post_id: "6",
+      user_id: "1",
+      comment: "モンゴル、ポーランドあたりが強いと思ってるけど、
+      どうだろ...",
+      likes_count: "0",
+      image: "",
+      created_at: "2020-09-08 03:45:41"
+    },
+    { post_id: "6",
+      user_id: "1",
+      comment: "モンゴル、ポーランドあたりが強いと思ってるけど、
+      どうだろ...",
+      likes_count: "0",
+      image: "",
+      created_at: "2020-09-08 03:45:41"
+    },
+    { post_id: "6",
+      user_id: "13",
+      comment: "スペイン一択。ムラがあるのと、マップによるけど
+      こいつだけ性能が壊れてる",
+      likes_count: "5",
+      image: "",
+      created_at: "2020-09-08 05:53:12"
+    },
+    { post_id: "6",
+      user_id: "12",
+      comment: "戦闘ならモンゴル→イギリスorズールー。
+      内政ならポーランド、エチオピア。
+      外交ならギリシャ",
+      likes_count: "2",
+      image: "",
+      created_at: "2020-09-08 07:21:33"
+    },
+    { post_id: "6",
+      user_id: "20",
+      comment: "まぁ神地形引かれたら、終わりなんですけどね...",
+      likes_count: "2",
+      image: open("./app/assets/images/神地形.jpg"),
+      created_at: "2020-09-08 11:53:45"
+    },
+    { post_id: "6",
+      user_id: "1",
+      comment: "こんな神地形を引きたかった...",
+      likes_count: "0",
+      image: "",
+      created_at: "2020-09-08 12:54:11"
     }
   ]
 )
