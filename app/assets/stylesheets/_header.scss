@@ -31,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 15px;
-    width: 600px;
+    width: 500px;
     text-align: center;
     &__about{
       width: 80px;
@@ -43,7 +43,7 @@ header {
       width: 120px;
     }
     &__user{
-      width: 240px;
+      width: 200px;
     }
   }
   a:hover { 
