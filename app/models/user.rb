@@ -10,5 +10,12 @@ class User < ApplicationRecord
   has_many :videolikes, dependent: :destroy
   has_many :videolike_comments, through: :videolikes, source: :videocomment
   
-  validates :nickname, presence: true, length: { maximum: 6 }
+  validates :nickname, presence: true, length: { maximum: 10 }
+
+  def self.guest
+    find_or_create_by(email: "test@com",nickname: "テストアカウント") do |user|
+      user.password = Rails.application.credentials[:test_account_pass]
+    end
+  end
+
 end
