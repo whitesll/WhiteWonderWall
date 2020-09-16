@@ -39,7 +39,7 @@ Post.create(
     { title: "基本的な立ち回り", game_id: "5"},
     { title: "ユニークユニットは誰が強いか？", game_id: "4"},
     { title: "どのティアが一番稼げるか", game_id: "2"},
-    { title: "日本戦車雑談", game_id: "3"},
+    { title: "芸術戦車画像", game_id: "3"},
 
     { title: "最強勢力はどこだ！？", game_id: "1"},
     { title: "スペインvsインドネシアは様式美", game_id: "1"},
@@ -239,6 +239,41 @@ Comment.create(
       likes_count: "0",
       image: "",
       created_at: "2020-09-12 14:54:19"
+    },
+    { post_id: "5",
+      user_id: "4",
+      comment: "",
+      likes_count: "3",
+      image: open("./app/assets/images/wot1.jpg"),
+      created_at: "2020-09-15 4:54:29"
+    },
+    { post_id: "5",
+      user_id: "15",
+      comment: "",
+      likes_count: "4",
+      image: open("./app/assets/images/wot2.jpg"),
+      created_at: "2020-09-15 5:12:39"
+    },
+    { post_id: "5",
+      user_id: "17",
+      comment: "",
+      likes_count: "6",
+      image: open("./app/assets/images/wot3.jpg"),
+      created_at: "2020-09-15 8:22:11"
+    },
+    { post_id: "5",
+      user_id: "11",
+      comment: "",
+      likes_count: "4",
+      image: open("./app/assets/images/wot4.jpg"),
+      created_at: "2020-09-15 11:52:41"
+    },
+    { post_id: "5",
+      user_id: "11",
+      comment: "",
+      likes_count: "7",
+      image: open("./app/assets/images/wot5.jpg"),
+      created_at: "2020-09-15 17:12:42"
     }
   ]
 )
