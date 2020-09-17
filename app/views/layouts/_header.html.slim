@@ -13,6 +13,8 @@ header
       .right-bar__user
         = link_to current_user.nickname,"/users/#{current_user.id}"
     - else
+      .right-bar__easylogin
+        = link_to '簡単ログイン', users_guest_sign_in_path, method: :post
       .right-bar__login
         = link_to "ログイン",new_user_session_path
       .right-bar__user

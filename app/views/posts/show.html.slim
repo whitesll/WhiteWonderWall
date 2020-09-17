@@ -1,3 +1,4 @@
+= render "layouts/sidebar-left"
 .post-show
   .post-index
     .post-title
@@ -12,7 +13,7 @@
         .txt__name
           = comment.user.nickname
         .txt__date
-          = comment.created_at.to_s
+          = comment.created_at.strftime("%Y-%m-%d %H:%M")
       .comment
         .like-link id="like-link-#{comment.id}"
           = render 'likes/like', comment: comment

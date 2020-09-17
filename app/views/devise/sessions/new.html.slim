@@ -11,5 +11,7 @@
         = f.check_box :remember_me
         = f.label :ログイン情報を保存
     .actions
-      = f.submit "Log in"
+      = f.submit "ログイン"
+    .easylogin
+      = link_to 'こちらからも簡単ログインできます', users_guest_sign_in_path, method: :post
 
