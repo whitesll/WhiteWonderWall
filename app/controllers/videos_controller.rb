@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
   before_action :videos_search
+  before_action :authenticate_user!, only: [:show]
 
   def index
     if params[:game_id]
