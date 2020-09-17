@@ -9,9 +9,9 @@
       .video-show__concept__description__title
         = @video.title
       .video-show__concept__description__views-date
-        | #{@video.created_at}
+        | #{@video.created_at.strftime("%Y-%m-%d %H:%M")}
       .video-show__concept__description__text
-        = @video.description
+        = safe_join(@video.description.split("\n"), tag(:br))
   .news
     = render partial: 'videocomments/videocomment', collection: @videocomments
   .message
