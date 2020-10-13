@@ -1,5 +1,9 @@
+require:
+  - rubocop-rails
+
 inherit_from:
   - .rubocop_todo.yml
+  
 
 AllCops:
   Exclude:
@@ -10,6 +14,10 @@ AllCops:
     - "node_modules/**/*"
     - "db/migrate/*.rb"
     - "bin/*"
+# Rails向けのRails copsを実行。"rubocop -R"と同じ
+  Rails:
+    enabled: true
+    
   DisplayCopNames: true
   TargetRubyVersion: 2.6.5
 
