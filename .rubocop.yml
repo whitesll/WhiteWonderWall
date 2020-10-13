@@ -98,3 +98,7 @@ Metrics/BlockLength:
 # {}を複数行で使う
 BlockDelimiters:
   Enabled: false
+
+# ハッシュロケット→シンボル優先
+HashSyntax:
+  Enabled: false
