@@ -58,6 +58,9 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec'
   gem 'rufo'
 end
 
@@ -66,7 +69,6 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
   gem 'webdrivers'
   gem 'faker', "~> 2.8"
 end
@@ -82,3 +84,4 @@ gem "font-awesome-sass"
 gem 'carrierwave'
 gem 'mini_magick'
 gem "jquery-rails"
+gem 'fog-aws'
