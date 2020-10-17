@@ -1,0 +1,26 @@
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+.slick{
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  .slick-area{
+    width: 150px;
+    height: 150px;  
+    img{
+      height: 150px;
+      width: 150px;       
+    }     
+  }
+}
+.slick-dots {
+  li {
+    font-size: 20px !important;
+    button:before {
+      content: "★" !important;
+      font-size: 14px !important;
+      color: rgb(255, 255, 255) !important;
+    }
+  }
+}
