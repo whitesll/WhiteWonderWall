@@ -1,14 +1,15 @@
 .mainpage {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   color: white;
   text-align: center;
   background-image:  url("background.png");
   background-size:  cover;
+  padding-top: 50px;
   h1{
     font-size: 72px;
     font-family: "ＭＳ ゴシック";
-    padding: 150px 00px 50px 00px;
+    padding: 10px 00px 50px 00px;
   }
   p{
     font-size: 24px;
@@ -20,5 +21,6 @@
     border-radius: 10px;
     padding: 4px 5px 0px 10px;
     border: 10px outset #4781ff;
+    margin-bottom: 30px;
   }
 }

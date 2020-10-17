@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( jquery.sidebar.min.js )
 Rails.application.config.assets.precompile += %w( sidebar.js )
+Rails.application.config.assets.precompile += %w( jquery.slick.min.js )
